@@ -19,10 +19,13 @@ function add(n1: number, n2: number, showResult: boolean, phrase: string) {
   }
 }
 
-const number1 = 5;
+let number1 = 5; // 5.0, decimal doesn't matter. Still same type
 const number2 = 2.8;
 const printResult = true;
 const resultPhrase = 'Result is: '
 
 const result = add(number1, number2, printResult, resultPhrase);
 console.log(result); 
+
+//! makes it clear this file is an ES module -> No redeclare errors
+export {};
