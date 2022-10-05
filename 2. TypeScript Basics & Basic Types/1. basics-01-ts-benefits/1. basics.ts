@@ -17,6 +17,7 @@ function add(n1: number, n2: number, showResult: boolean, phrase: string) {
   else {
     return result;
   }
+  
 }
 
 let number1 = 5; // 5.0, decimal doesn't matter. Still same type
