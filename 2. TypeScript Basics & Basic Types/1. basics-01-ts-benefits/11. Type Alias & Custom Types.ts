@@ -1,5 +1,10 @@
-/** Type Alias & Custom Types - variables for types*/
+/** Type Alias & Custom Types - variables for types
+ *  1.  Basic
+ *  2.  With Object Types
+*/
 
+/** 1. BASIC */
+//* Type Alias declarations
 type Combinable = number | string                    //* Type Alias 1
 type ConversionDescriptor = 'as-number' | 'as-text'  //* Type Alias 1
 
@@ -34,5 +39,15 @@ console.log(combinedStringAges)
 
 const combinedNames = combine('Max', 'Anna', 'as-text')
 console.log(combinedNames)
+
+/** 2. With Object Types */
+type User = { name: string; age: number };
+
+//* so instead of...
+// const u1: { name: string; age: number } = { name: 'Max', age: 30 }; 
+
+//* we can do:
+const u1: User = { name: 'Max', age: 30 }; 
+
 
 export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables. 
