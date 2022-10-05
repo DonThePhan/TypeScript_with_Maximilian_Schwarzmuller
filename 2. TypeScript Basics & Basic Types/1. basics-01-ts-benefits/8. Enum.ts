@@ -29,5 +29,4 @@ if (person.role === Role.AUTHOR) {
   console.log('is author')
 }
 
-//! makes it clear this file is an ES module -> No redeclare errors
-export {};
+export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables. 

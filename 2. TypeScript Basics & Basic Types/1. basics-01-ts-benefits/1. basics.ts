@@ -27,5 +27,5 @@ const resultPhrase = 'Result is: '
 const result = add(number1, number2, printResult, resultPhrase);
 console.log(result); 
 
-//! makes it clear this file is an ES module -> No redeclare errors
-export {};
+
+export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables. 
