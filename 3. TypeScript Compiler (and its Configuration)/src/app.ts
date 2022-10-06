@@ -8,10 +8,9 @@
  *        - CTRL + C to quit 
  * 
  *  2.  WATCH MODE - ALL
- *        1.  *** FIRST *** "tsc --init" - ONLY required ONCE, inside directory folder
- *            - creates a 'tsconfig.json' file
- *        2.  then "tsc -w" and ALL TS files will enter WATCH MODE
- *        3.  OR "tsc" to compile ALL TS files just once 
+ *        FIRST -> "tsc --init" - ONLY required ONCE, inside directory folder - creates a 'tsconfig.json' file
+ *            1.  "tsc -w" and ALL TS files will enter WATCH MODE
+ *            2.  "tsc" to compile ALL TS files just once 
  * 
  *  3.  tsconfig.json - used to config (see tsconfig.json)
  *        1.  ** If both 'include' & 'exclude' are present, compiler will do (Include - Exclude)
