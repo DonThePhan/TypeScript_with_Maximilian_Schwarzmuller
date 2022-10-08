@@ -1,5 +1,5 @@
 class Department {
-  /** PROTECTED is like PRIVATE except inheriting classes also have access to it. PRIVATE is only available in origin class */
+  /** PROTECTED is like PRIVATE except inheriting classes also have access to it */
   protected employees: string[] = [];
 
   constructor(private readonly id: string, public name: string) {}
@@ -18,7 +18,6 @@ class Department {
   }
 }
 
-/** Use EXTENDS to inherit */
 class ITDepartment extends Department {
   constructor(id: string, public admins: string[]) {
     /** SUPER calls constructor of inherited class - goes on FIRST line in contructor. Here we Automatically set name to "IT" */
@@ -32,7 +31,7 @@ class AccountingDepartment extends Department {
     super(id, 'Accounting');
   }
 
-  /** Can OVERRIDE inherited class methods */
+  /** overrides inherited class method */
   addEmployee(name: string) {
     if (name === 'Donny') {
       return;
@@ -61,3 +60,5 @@ accounting.printReports();
 accounting.addEmployee('Donny');
 accounting.addEmployee('Lex');
 accounting.printEmployeeInformation();
+
+export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables. 
