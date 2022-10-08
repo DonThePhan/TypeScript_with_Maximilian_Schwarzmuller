@@ -83,3 +83,5 @@ console.log(employee1);
 
 /** Use the STATIC PROPERTY */
 console.log(Department.fiscalYear);
+
+export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables. 
