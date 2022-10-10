@@ -37,3 +37,5 @@ let user1: Greetable;
 user1 = new Person(); /** since parameters optional, we won't get flagged */
 user1.greet('Hi there! My name is');
 console.log(user1);
+
+export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables.
