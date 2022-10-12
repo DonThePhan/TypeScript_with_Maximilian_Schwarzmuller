@@ -8,22 +8,8 @@ type Employee = {
   startDate: Date;
 };
 
-type ElevatedEmployee = Admin & Employee;
-
-const e1: ElevatedEmployee = {
-  name: 'Donny',
-  privileges: ['create-server'],
-  startDate: new Date(),
-};
-console.log(e1);
-
 type Numeric = number | boolean;
 type Combinable = string | number;
-
-type Universal = Combinable & Numeric;
-
-let num1: Universal = 1;
-console.log(num1);
 
 /** TYPE GUARD STRATEGIES - checking if property exists before we utilize it */
 
@@ -35,6 +21,8 @@ function add(a: Combinable, b: Combinable) {
   return a + b;
 }
 add(1, 2);
+
+/** ------------------------------------------------------ */
 
 type UnknownEmployee = Employee | Admin;
 
@@ -52,6 +40,7 @@ function printEmployeeInformation(emp: UnknownEmployee) {
 
 printEmployeeInformation({ name: 'Donny', privileges: ['Canadian'] });
 
+/** ------------------------------------------------------ */
 class Car {
   drive() {
     console.log('Driving...');
@@ -76,12 +65,10 @@ const v2 = new Truck();
 function useVehicle(vehicle: Vehicle) {
   vehicle.drive();
 
-  /** METHOD 3 - Use INSTANCEOF to check if object based on a class */
+  /** METHOD 3 - Use INSTANCEOF to check if object based on a class (doesn't work for interface - cuz JS doesn't actually recognize interface) */
   if (vehicle instanceof Truck) {
     vehicle.loadCargo(1000);
   }
 }
 useVehicle(v1);
 useVehicle(v2);
-
-export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables.

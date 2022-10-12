@@ -33,3 +33,5 @@ function moveAnimal(animal: Animal) {
 }
 
 moveAnimal({ type: 'bird', flyingSpeed: 10 });
+
+export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables.
