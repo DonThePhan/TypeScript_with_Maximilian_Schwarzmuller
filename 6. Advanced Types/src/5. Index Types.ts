@@ -42,4 +42,6 @@ const errorBag: ErrorContainer = {
   // phone: 1234567, // this would flag as error because the value is not string like we specified in the inteface above
 };
 
+console.log(errorBag);
+
 export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables.

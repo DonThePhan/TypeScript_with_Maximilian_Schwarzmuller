@@ -8,7 +8,6 @@ type Employee = {
   startDate: Date;
 };
 
-type Numeric = number | boolean;
 type Combinable = string | number;
 
 /** TYPE GUARD STRATEGIES - checking if property exists before we utilize it */
@@ -72,3 +71,5 @@ function useVehicle(vehicle: Vehicle) {
 }
 useVehicle(v1);
 useVehicle(v2);
+
+export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables.

@@ -15,3 +15,5 @@ function add(a: Combinable, b: Combinable) {
 }
 console.log(add(1, 2));
 console.log(add('Donny', 'Phan'));
+
+export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables.
