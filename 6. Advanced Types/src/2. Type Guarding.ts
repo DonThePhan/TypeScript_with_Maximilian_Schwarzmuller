@@ -64,7 +64,7 @@ const v2 = new Truck();
 function useVehicle(vehicle: Vehicle) {
   vehicle.drive();
 
-  /** METHOD 3 - Use INSTANCEOF to check if object based on a class (doesn't work for interface - cuz JS doesn't actually recognize interface) */
+  /** METHOD 3 - Use INSTANCEOF to check if object BASED ON a CLASS (will check if it's a constructor function). Doesn't work for interface - cuz JS doesn't actually recognize interface */
   if (vehicle instanceof Truck) {
     vehicle.loadCargo(1000);
   }
