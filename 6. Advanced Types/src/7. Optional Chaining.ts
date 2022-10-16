@@ -24,3 +24,5 @@ const fetchUserData = {
 
 // console.log(fetchUserData.job && fetchUserData.job.title); //* vanilla JS way
 console.log(fetchUserData?.job?.title); /** OPTIONAL CHAINING alternative */
+
+export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables.
