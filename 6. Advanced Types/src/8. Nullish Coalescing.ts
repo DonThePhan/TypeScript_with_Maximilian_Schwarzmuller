@@ -29,3 +29,5 @@ const userInput = '';
 const storedData = userInput ?? /** instead of || */ 'SOME VALUE'; //* Output is still ''. If we used '||', first value would === falsey so output would be "SOME VALUE"
 
 console.log(storedData);
+
+export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables.

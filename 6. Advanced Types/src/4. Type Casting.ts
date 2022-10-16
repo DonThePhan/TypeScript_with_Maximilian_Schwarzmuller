@@ -33,7 +33,7 @@ moveAnimal({ type: 'bird', flyingSpeed: 10 });
 //   document.getElementById('user-input')! // '!' to let TS know there will ALWAYS be a value. Otherwise it will flag cuz there's a possibility for undefined
 // );
 
-/** OPTION 2: add suffix 'as HTMLInputElement */
+/** OPTION 2: add suffix 'as HTMLInputElement' */
 const userInputElement = document.getElementById('user-input');
 
 // we can also try 'if' vs '!' method as well this time around

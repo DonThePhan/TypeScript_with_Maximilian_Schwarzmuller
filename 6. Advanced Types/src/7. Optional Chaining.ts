@@ -14,8 +14,10 @@ function add(a: Combinable, b: Combinable) {
 console.log(add(1, 2));
 console.log(add('Donny', 'Phan'));
 
-/** OPTIONAL CHAINING - to check if values exist before accessing them (so we don't get errors) */
-
+/** OPTIONAL CHAINING - to check if values exist before accessing them (so we don't get errors) 
+ *  - use when we're fetching data from an API, so there's no guarantee we'll get what we expect
+*/
+// since we aren't using an API in this example, we'll just create an object
 const fetchUserData = {
   id: 'u1',
   name: 'Donny',

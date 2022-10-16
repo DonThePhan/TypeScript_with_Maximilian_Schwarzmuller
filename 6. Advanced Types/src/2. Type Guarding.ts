@@ -10,7 +10,7 @@ type Employee = {
 
 type Combinable = string | number;
 
-/** TYPE GUARD STRATEGIES - checking if property exists before we utilize it */
+/** TYPE GUARD STRATEGIES - checking if property TYPE exists before we utilize it */
 
 function add(a: Combinable, b: Combinable) {
   /** METHOD 1 - Type Comparison */
