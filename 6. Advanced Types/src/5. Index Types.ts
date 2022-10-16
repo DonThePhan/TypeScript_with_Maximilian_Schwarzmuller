@@ -41,3 +41,5 @@ const errorBag: ErrorContainer = {
   username: 'Must start with a capital character',
   // phone: 1234567, // this would flag as error because the value is not string like we specified in the inteface above
 };
+
+export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables.
