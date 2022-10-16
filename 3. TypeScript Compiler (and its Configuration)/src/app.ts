@@ -19,7 +19,7 @@
  *            3.  FILES - Similar to INCLUDE except can't specify folders (not very common, usually just use Include)
  *        2.  TARGET - can specify what version to JS to compile (i.e. es6, which includes let & const)
  *        3.  LIB - what libraries to include. 
- *              - If we don't include it, TS will use defaul JS libraries from the TARGET es version we chose. 
+ *              - If we don't include it, TS will use default JS libraries from the TARGET es version we chose. 
  *              - if included, no libraries included until we add to list in LIB.
  *        4.  CHECK JS - can enable if you're working in just JS and want TS to still check
  *        5.  SOURCE MAP - makes TS files available in dev tools source (in case we want to debug in the browser)
