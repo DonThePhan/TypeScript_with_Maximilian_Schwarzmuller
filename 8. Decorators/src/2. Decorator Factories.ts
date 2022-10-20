@@ -1,5 +1,6 @@
 /** DECORATOR FACTORIES */
 
+//* Decorator Factory
 function Logger(logString: string) {
   return function (constructor: Function) {
     console.log(logString);
@@ -18,3 +19,5 @@ class Person {
 
 const pers = new Person();
 console.log(pers);
+
+export {}; //! Remove this line when compiling. Purpose is to not interfere w/ other TS files that have the same variables.

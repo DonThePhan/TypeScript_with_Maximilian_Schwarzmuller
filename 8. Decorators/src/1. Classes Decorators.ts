@@ -1,9 +1,9 @@
 /** DECORATORS useful for Meta-Programming - writing code that makes it easier to use by other devs */
 
-/** 1. Enable "'experimentalDecorators':true" in tsconfig (line 63 for this case) */
+/** 1. ENABLE "'experimentalDecorators':true" in tsconfig (line 63 for this case) */
 
-//* 2.  Create DECORATORS Function. (common practice to Upper case first letter in decorator func.)
-function Logger(constructor: Function) {
+//* 2.  Create DECORATOR Function. (common practice to Upper case first letter in decorator func.)
+function Logger(constructor /* <- can name anything */: Function) {
   console.log('logging...');
   console.log(constructor);
 }
