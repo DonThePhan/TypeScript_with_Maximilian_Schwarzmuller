@@ -8,7 +8,7 @@ function Logger(constructor /* <- can name anything */: Function) {
   console.log(constructor);
 }
 
-@Logger //* 3.  Decorator RUNS when JS finds the class definition it's attached to
+@Logger //* 3.  Decorator RUNS when JS declares the item it's decorating AND when the decorated item is utilized
 class Person {
   name = 'Donny';
 
