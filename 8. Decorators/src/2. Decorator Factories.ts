@@ -19,7 +19,7 @@ function WithTemplate(template: string, hookId: string) {
     }
   };
 }
-//* Decorator RUNS when JS declares the item it's decorating AND when the decorated item is utilized
+//* Decorator RUNS when JS declares the item it's decorating
 // @Logger('LOGGING - PERSON') // Decorator Factory Function ex. 1
 @WithTemplate('<h1>My Person Object</h1>', 'app') // Decorator Factory Function ex. 2
 class Person {
